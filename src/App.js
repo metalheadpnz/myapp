@@ -1,28 +1,24 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Login from "./components/login/login";
+import Conform from "./components/conform/conform";
+import Categories from "./components/categories/categories";
+import PokemonCard from "./components/pokemonCard/pokemonCard";
+import {Route} from "react-router-dom";
 
 function App() {
-  return (
-    <div>
-      Супертест
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-        </a>
-        </header>
-      </div>
-    </div>
-  );
+
+    const [auth, setAuth] = useState(false)
+
+    return (
+        <div className="App">
+            <Route exact path='/' render={() => <Login auth={auth} setAuth={setAuth}/>}/>
+            <Route path='/login' render={() => <Login auth={auth} setAuth={setAuth}/>}/>
+            <Route path='/conform' render={() => <Conform auth={auth} setAuth={setAuth}/>}/>
+            <Route path='/categories' render={() => <Categories auth={auth} setAuth={setAuth}/>}/>
+            <Route path='/card' render={() => <PokemonCard auth={auth} setAuth={setAuth}/>}/>
+        </div>
+    );
 }
 
 export default App;
