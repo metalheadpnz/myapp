@@ -1,0 +1,90 @@
+.wrap {
+
+}
+
+.header {
+    background-color: #EBEBEB;
+    margin: 0 auto;
+    margin-top: 18px;
+
+    width: 1032px;
+    height: 61px;
+    left: 59px;
+    top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logout {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-right: 33px;
+    cursor: pointer;
+}
+
+.back {
+    margin-left: 21px;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.contentContainer {
+    width: 1032px;
+    height: 883px;
+    margin: 30px auto 0px auto;
+    display: flex;
+
+}
+
+.bigPic {
+    min-width: 622px;
+    height: 378px;
+}
+
+.infoPanel {
+    margin-left: 34px;
+    width: 410px;
+    height: 438px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 44px;
+}
+
+.hr {
+    color: #DBDBDB;
+    width: 243px;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 36px;
+}
+
+.leftPanel {
+    width: 622px;
+}
+
+.imgTest {
+    position: absolute;
+    left: 40px;
+    top: -0px;
+    clip: rect(110px, 650px, 480px, 50px);
+}
